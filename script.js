@@ -220,7 +220,7 @@ const music = document.getElementById("bgMusic");
 const musicBtn = document.getElementById("musicBtn");
 
 document.addEventListener("click", () => {
-  music.play(
+  music.play().catch(()=>{});
 }, { once: true });
 
 musicBtn.onclick = () => {
