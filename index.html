@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Survival Builder Arena</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- UI -->
+<div id="ui">
+  <div>🪵 Wood: <span id="wood">0</span></div>
+  <div>❤️ HP: <span id="hp">100</span></div>
+  <div>👥 Players: <span id="players">50</span></div>
+
+  <div id="buildMenu">
+    <button onclick="setBuild('wall')">Wall</button>
+    <button onclick="setBuild('floor')">Floor</button>
+    <button onclick="setBuild('ramp')">Ramp</button>
+    <button onclick="setBuild('cone')">Cone</button>
+  </div>
+</div>
+
+<!-- Canvas -->
+<canvas id="game"></canvas>
+
+<!-- MUSIC -->
+<audio id="bgMusic" loop>
+  <source src="https://missing-aqua-kz7v8mkbkp.edgeone.app/Cozy%20Constellations.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn">🔊 Music: ON</button>
+
+<script src="script.js"></script>
+</body>
+</html>
